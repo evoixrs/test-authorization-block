@@ -11,21 +11,24 @@ Python, Selenium и паттерна Page Object
 3. Неуспешную авторизацию с неверным паролем
 
 test-authorization-block/
-├── .github/workflows/    # Конфигурация GitHub Actions
-├── locators/             # Локаторы элементов страницы
-├── pages/                # Классы страниц (Page Objects)
-│   ├── base_page.py      # Базовая страница с общими методами
-│   ├── loginform.py      # Страница авторизации (первая версия)
-│   └── loginform_2.py    # Улучшенная страница авторизации
-├── tests/                # Тестовые файлы
-│   ├── conftest.py       # Конфигурация pytest и фикстуры
-│   ├── test_loginform_1.py  # Базовые тесты авторизации
-│   ├── test_loginform_2.py  # Тесты с использованием Page Object
-│   ├── test_loginform_3.py  # Тесты с использованием фикстур
-│   └── test_loginform_4.py  # Расширенные тесты с базовой страницей
-├── .gitignore            # Файлы, исключенные из репозитория
-├── pytest.ini            # Конфигурация pytest
-└── requirements.txt      # Зависимости проекта
+## Структура проекта
+
+- **test-authorization-block/**
+  - **.github/workflows/** - Конфигурация GitHub Actions
+  - **locators/** - Локаторы элементов страницы
+  - **pages/** - Классы страниц (Page Objects)
+    - **base_page.py** - Базовая страница с общими методами
+    - **loginform.py** - Страница авторизации (первая версия)
+    - **loginform_2.py** - Улучшенная страница авторизации
+  - **tests/** - Тестовые файлы
+    - **conftest.py** - Конфигурация pytest и фикстуры
+    - **test_loginform_1.py** - Базовые тесты авторизации
+    - **test_loginform_2.py** - Тесты с использованием Page Object
+    - **test_loginform_3.py** - Тесты с использованием фикстур
+    - **test_loginform_4.py** - Расширенные тесты с базовой страницей
+  - **.gitignore** - Файлы, исключенные из репозитория
+  - **pytest.ini** - Конфигурация pytest
+  - **requirements.txt** - Зависимости проекта
 
 Установка
 
