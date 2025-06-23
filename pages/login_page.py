@@ -1,20 +1,17 @@
 import logging
-
-from selenium.webdriver.common.by import By
-
-from locators.loginform_locators import LoginformLocators
+from locators.login_form_locators import LoginformLocators
 from pages.base_page import BasePage
 
 logger = logging.getLogger("qa")
 
-class LoginformPage2(BasePage):
+class LoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
         """Локаторы"""
         #self.driver = driver
 
-    def add_loginform(self, username_text, password_text):
+    def add_login_page(self, username_text, password_text):
         logger.info(f'Try to add user {username_text}, {password_text}')
         self.fill(value=username_text, locator=LoginformLocators.USERNAME)
         self.fill(value=password_text, locator=LoginformLocators.PASSWORD)
