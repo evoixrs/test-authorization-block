@@ -35,14 +35,14 @@ jobs:
       run: |
         pytest tests --headless --junit-xml=reports/results.xml 
 
-    #- name: Send Test Results to TestIT
-      #run: |
-        #testit results import \
-          #--url https://team-bi85.testit.software \
-          #--project-id 0195fc89-1f87-7423-b2df-f156dc859bf9 \
-          #--configuration-id 0195fc89-1fb4-74ae-b403-4d1bef41939a \
-          #--testrun-name "Pytest test run" \
-          #--results reports \
-          #--token ${{ secrets.TMS_TOKEN }}
+    - name: Send Test Results to TestIT
+      run: |
+        testit results import \
+          --url https://team-pqbi.testit.software \
+          --project-id 01974f80-3197-7392-a7eb-4e3abc3ec774 \
+          --configuration-id 01974f80-31d0-756b-bac2-cdda5de0f631 \
+          --testrun-name "Pytest test run" \
+          --results reports \
+          --token ${{ secrets.TMS_TOKEN }}
       env:
         TMS_TOKEN: ${{ secrets.TMS_TOKEN }}
