@@ -1,7 +1,7 @@
 # test-authorization-block
  training Python Selenium
 
-Этот проект представляет собой автоматизированные тесты для формы авторизации с использованием 
+Этот проект представляет собой учебные автоматизированные тесты для формы авторизации с использованием 
 Python, Selenium и паттерна Page Object
 
 Проект демонстрирует автоматизацию тестирования формы авторизации на сайте https://berpress.github.io/selenium-login-demo/. 
@@ -29,7 +29,6 @@ test-authorization-block/
   - **.gitignore** - Файлы, исключенные из репозитория
   - **pytest.ini** - Конфигурация pytest
   - **requirements.txt** - Зависимости проекта
-
 
 Установка
 
