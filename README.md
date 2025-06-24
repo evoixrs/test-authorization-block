@@ -1,16 +1,17 @@
 # test-authorization-block
  training Python Selenium
 
-Учебные автоматизированные тесты для формы авторизации с использованием Python, Selenium и паттерна Page Object.
-Проект демонстрирует автоматизацию тестирования формы авторизации на сайте https://berpress.github.io/selenium-login-demo/.Тесты 
-проверяют различные сценарии входа в систему, включая:
+Учебные автоматизированные тесты для формы авторизации с использованием Python, Selenium и паттерна Page Object.  
+Проект демонстрирует автоматизацию тестирования формы авторизации на сайте [https://berpress.github.io/selenium-login-demo/](https://berpress.github.io/selenium-login-demo/).
+Тесты проверяют различные сценарии входа в систему, включая:
 
-1.Успешную авторизацию с правильными учетными данными
-2.Неуспешную авторизацию с неверным логином
+1.Успешную авторизацию с правильными учетными данными  
+2.Неуспешную авторизацию с неверным логином  
 3.Неуспешную авторизацию с неверным паролем
 
 Структура проекта
 
+```` 
 test-authorization-block/
 ├── .github/workflows/           # Конфигурация GitHub Actions
 ├── locators/                    # Локаторы элементов страницы
@@ -24,32 +25,39 @@ test-authorization-block/
 ├── pytest.ini                   # Конфигурация pytest
 └── requirements.txt             # Зависимости проекта
 
+````
 
-Установка
-Клонируйте репозиторий: 
+Установка Клонируйте репозиторий:
+```bash
 git clone https://github.com/evoixrs/test-authorization-block.git
-
+```
 Создайте и активируйте виртуальное окружение:
-# Windows
-python -m venv venv
-venv\Scripts\activate
 
-# Linux/MacOS
-python -m venv venv
-source venv/bin/activate
-
-Установите зависимости:
+### Windows
+````
+python  -m venv venv  venv\Scripts\activate
+````
+### Linux/MacOS
+````
+python  -m venv venv  source venv/bin/activate
+````
+### Установите зависимости:  
 bash
-pip install -r requirements.txt
-
-Запуск всех тестов:
+````
+pip install  -r requirements.txt
+````
+### Запуск всех тестов:  
 bash
+````
 pytest
-
-Запуск конкретного тестового файла:
-bash
+````
+### Запуск конкретного тестового файла:  
+bash 
+````
 pytest tests/test_login_page.py
-
-Запуск с генерацией отчета:
+````
+### Запуск с генерацией отчета:  
 bash
-pytest --junit-xml=reports/results.xml
+````
+pytest  --junit-xml=reports/results.xml
+````
